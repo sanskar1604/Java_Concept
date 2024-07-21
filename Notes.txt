@@ -1,2 +1,10 @@
 int[] arr = new int[10]; // When we create object using new keyword then it will stored in Heap Memory. and starting address of array stored in Stack Memory.
 int a = 1;	//When we create variable then it will stored in Stack Memory
+
+Jagged Array -- Array of different length array is called Jagged Array.
+
+Encapsulation -- Bundling of data and method into single unit is called Encapsulation and also used for data hiding.
+		We can achieve encapsulation using getters and setters method.
+		To create getter and setter method, we need to define variable as private only.
+
+Inheritance -- 
