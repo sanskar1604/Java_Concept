@@ -7,4 +7,13 @@ Encapsulation -- Bundling of data and method into single unit is called Encapsul
 		We can achieve encapsulation using getters and setters method.
 		To create getter and setter method, we need to define variable as private only.
 
-Inheritance -- 
+Inheritance -- Inheriting the property of parent class is called Inheritance.
+		Inheritance is used to create a new class based on existing class and it’s a mechanism through which an object can acquire all the properties of another class.
+
+Polymorphism -- Polymorphism allows methods to do different things based on the object it is acting upon, even though method name and signature might be same.
+		Compile time polymorphism can be achieve using method overloading.
+		Run time polymorphism can be achieve using method overriding. 
+
+Constructor -- is special method to initialise object.
+		is called when we decalare object.
+		No return type for constructor.
