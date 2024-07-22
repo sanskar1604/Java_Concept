@@ -1,19 +1,60 @@
-int[] arr = new int[10]; // When we create object using new keyword then it will stored in Heap Memory. and starting address of array stored in Stack Memory.
-int a = 1;	//When we create variable then it will stored in Stack Memory
+int[] arr = new int[10]; // When we create an object using the 'new' keyword, it is stored in heap memory, and the starting address of the array is stored in stack memory.
+int a = 1; // When we create a variable, it is stored in stack memory.
 
-Jagged Array -- Array of different length array is called Jagged Array.
+Jagged Array -- An array of different length arrays is called a Jagged Array.
 
-Encapsulation -- Bundling of data and method into single unit is called Encapsulation and also used for data hiding.
-		We can achieve encapsulation using getters and setters method.
-		To create getter and setter method, we need to define variable as private only.
+Encapsulation -- Bundling data and methods into a single unit is called Encapsulation and is also used for data hiding.
+    We can achieve encapsulation using getter and setter methods.
+    To create getter and setter methods, we need to define the variable as private.
 
-Inheritance -- Inheriting the property of parent class is called Inheritance.
-		Inheritance is used to create a new class based on existing class and it’s a mechanism through which an object can acquire all the properties of another class.
+Inheritance -- Inheriting the properties of a parent class is called Inheritance.
+    Inheritance is used to create a new class based on an existing class, and it’s a mechanism through which an object can acquire all the properties of another class.
 
-Polymorphism -- Polymorphism allows methods to do different things based on the object it is acting upon, even though method name and signature might be same.
-		Compile time polymorphism can be achieve using method overloading.
-		Run time polymorphism can be achieve using method overriding. 
+Polymorphism -- Polymorphism allows methods to do different things based on the object they are acting upon, even though the method name and signature might be the same.
+    Compile-time polymorphism can be achieved using method overloading.
+    Runtime polymorphism can be achieved using method overriding.
+    Runtime polymorphism is also known as Dynamic Method Dispatch.
 
-Constructor -- is special method to initialise object.
-		is called when we decalare object.
-		No return type for constructor.
+Abstraction -- Abstract methods can be declared in an abstract class only.
+    In an abstract class, we can define non-abstract methods as well.
+    Methods without a body are known as abstract methods.
+    Methods with a body are known as concrete methods.
+    We cannot create an object of an abstract class.
+    Animal animal = new Animal(); // Animal is an abstract class.
+    We can create a reference for an abstract class and an object for an implementation class.
+    Animal animal = new Dog(); // Animal is an abstract class and Dog is a non-abstract implementation class of Animal.
+
+Access Modifiers -- 
+    Public -- Public methods and variables can be accessed from anywhere, across different packages as well.
+    Private -- We can access them at the class level only.
+        We can restrict anyone from creating an object of a class by defining the constructor of the class as private.
+    Protected -- We can access the protected keyword from a different class only when that class is extending the class in which the protected keyword is defined.
+        We can also access it within the same package without extending.
+    Default -- We can access them at the package level only.
+
+Constructor -- A special method to initialize an object.
+    It is called when we declare an object.
+    There is no return type for constructors.
+
+Static -- It can be applied to variables, methods, blocks, and nested classes.
+    The main concept behind static is that it belongs to the class rather than an instance of the class (object).
+    We cannot access a non-static method from a static method directly.
+    To access a non-static method from a static method, we need to create an object for the non-static method in the static method.
+    The static method cannot use non-static data members or call non-static methods directly.
+    `this()` and `super()` cannot be used in a static context.
+
+Final Keyword -- Can be used with:
+    Variable -- If a variable is initialized as final, then we cannot change the value of that variable.
+    Method -- If a method is declared as final, then we cannot override that method.
+    Class -- If a class is declared as final, then we cannot inherit that class.
+
+Interface -- A blueprint for creating a class.
+    Interfaces are used to achieve multiple inheritance.
+    Interfaces are used to achieve complete abstraction.
+    Interfaces have only static variables and abstract methods.
+    By default, all variables in an interface are static and final.
+    By default, all methods defined in an interface are abstract.
+
+Difference between abstract class and interface:
+    In an interface, there are only static variables and abstract methods, while in an abstract class, there can be abstract methods as well as concrete methods.
+    In an interface, the child class implements the interface, while in an abstract class, the child class extends the abstract class.
