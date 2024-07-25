@@ -5,6 +5,10 @@ public class TestInterface {
 		AnimalInterfaceImpl animalInterfaceImpl = new AnimalInterfaceImpl();
 		animalInterfaceImpl.eat();
 		System.out.println(animalInterfaceImpl.max);
+		
+		AnimalInterface.info();
+		
+		animalInterfaceImpl.run();
 	}
 	
 }

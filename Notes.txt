@@ -54,7 +54,10 @@ Interface -- A blueprint for creating a class.
     Interfaces have only static variables and abstract methods.
     By default, all variables in an interface are static and final.
     By default, all methods defined in an interface are abstract.
+    Interface can have static method.
+    Interface can have default methods and it will be called by object of interface implementation class.
 
 Difference between abstract class and interface:
     In an interface, there are only static variables and abstract methods, while in an abstract class, there can be abstract methods as well as concrete methods.
     In an interface, the child class implements the interface, while in an abstract class, the child class extends the abstract class.
+    one class extends only one abstract class, while one class can implements more than one interface class.
